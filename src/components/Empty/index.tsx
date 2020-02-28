@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames'
-import styles from './index.less'
+import styles from './index.less';
 
 interface EmptyProps {
 	text?: string;
@@ -9,8 +9,8 @@ interface EmptyProps {
 
 const Empty: React.FC<EmptyProps> = props => {
 	let { text, className } = props;
-	return <div className={classNames(styles.emptyWrap, className)}>
-		<div className={styles.emptyInner}>
+	return <div className={classNames("emptyWrap", className)}>
+		<div className="emptyInner">
 			<span className="icon-finder"></span>
 			<p>{text ? text : '空空如也'}</p>
 		</div>

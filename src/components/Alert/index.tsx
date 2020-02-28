@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import classNames from 'classnames'
-import styles from './index.less'
+import './index.less';
 
 type EventType =
 	| React.KeyboardEvent<HTMLDivElement>
@@ -25,10 +25,10 @@ const Alert: React.FC<AlertProps> = props => {
 		onClose && onClose(e)
 	}
 
-	return visible ? <div className={classNames(styles.xAlertWrap, styles[type] || styles.warning)} style={{ opacity: visible ? '1' : '0', ...style }}>
-		<div className={styles.alertMes}>{message}</div>
-		<div className={styles.alertDesc}>{description}</div>
-		{!!closable && <span className={styles.closeBtn} onClick={handleClose}>{closeText ? closeText : 'x'}</span>}
+	return visible ? <div className={classNames('xAlertWrap', type || 'warning')} style={{ opacity: visible ? '1' : '0', ...style }}>
+		<div className="alertMes">{message}</div>
+		<div className="alertDesc">{description}</div>
+		{!!closable && <span className="closeBtn" onClick={handleClose}>{closeText ? closeText : 'x'}</span>}
 	</div > : null;
 }
 

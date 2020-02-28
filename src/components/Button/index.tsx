@@ -1,6 +1,6 @@
 import React from 'react'
 import classNames from 'classnames'
-import './index.less'
+import './index.less';
 
 interface ButtonProps {
 	children?: React.ReactNode;

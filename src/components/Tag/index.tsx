@@ -1,6 +1,6 @@
 import React from 'react'
 import classNames from 'classnames'
-import styles from './index.less'
+import './index.less';
 
 interface TagProps {
 	children?: React.ReactNode;
@@ -17,9 +17,9 @@ const Tag: React.FC<TagProps> = props => {
 		onClose && onClose(e);
 		tag.current!.style.display = 'none'
 	}
-	return <div ref={tag} className={classNames(styles.xTag, color ? styles.xTagHasColor : '')} style={{ backgroundColor: color }}>
+	return <div ref={tag} className={classNames('xTag', color ? 'xTagHasColor' : '')} style={{ backgroundColor: color }}>
 		{children}
-		{closable && <span className={styles.closeBtn} onClick={handleClose}>x</span>}
+		{closable && <span className='closeBtn' onClick={handleClose}>x</span>}
 	</div>
 }
 
