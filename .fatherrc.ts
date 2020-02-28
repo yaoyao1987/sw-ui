@@ -6,6 +6,7 @@ const options: IBundleOptions = {
   doc: { typescript: true },
   extractCSS: true,
   lessInBabelMode: true,
+  runtimeHelpers: true
 };
 
 export default options;
