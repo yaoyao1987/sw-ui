@@ -1,20 +1,12 @@
 {
   "name": "@yaoyao1987/sw-ui",
-  "version": "0.0.5-test",
-  "description": "测试UI",
-  "files": [
-    "dist",
-    "lib",
-    "es"
-  ],
-  "main": "lib/index.js",
-  "module": "es/index.js",
+  "version": "0.0.6-test",
+  "description": "测试ui",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
   "authors": {
     "name": "yao yao",
     "email": "yaolingyan1987@126.com"
-  },
-  "bugs": {
-    "url": "https://github.com/yaoyao1987/sw-ui/issues"
   },
   "repository": {
     "type": "git",

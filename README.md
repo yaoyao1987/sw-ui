@@ -1,11 +1,11 @@
 # @umi-material/@yaoyao1987/sw-ui
 
-测试UI
+测试ui
 
 ## Usage
 
 ```sh
-umi block https://github.com/https://github.com/yaoyao1987/sw-ui.git/tree/master/@yaoyao1987/sw-ui
+umi block https://github.com//tree/master/@yaoyao1987/sw-ui
 ```
 
 ## LICENSE
