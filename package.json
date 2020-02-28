@@ -1,6 +1,6 @@
 {
   "name": "@yaoyao1987/sw-ui",
-  "version": "0.0.4-test",
+  "version": "0.0.5-test",
   "description": "测试UI",
   "files": [
     "dist",
