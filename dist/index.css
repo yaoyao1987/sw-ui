@@ -1,0 +1,122 @@
+.xButton {
+  display: inline-block;
+  padding: 6px 1em;
+  border-radius: 4px;
+  color: #fff;
+  font-family: inherit;
+  background-color: #000;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.xButton.primary {
+  background-color: #09f;
+}
+.xButton.warning {
+  background-color: #f90;
+}
+.xButton.info {
+  background-color: #c03;
+}
+.xButton.pure {
+  border: 1px solid #ccc;
+  color: rgba(0, 0, 0, 0.65);
+  background-color: #fff;
+}
+.xButton.pure:after {
+  background-image: radial-gradient(circle, #ccc 10%, transparent 11%);
+}
+.xButton.circle {
+  border-radius: 1.5em;
+}
+.xButton.block {
+  display: block;
+}
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+.ripple:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, #fff 10%, transparent 11%);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  -webkit-transform: scale(12, 12);
+      -ms-transform: scale(12, 12);
+          transform: scale(12, 12);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s, -webkit-transform 0.6s;
+  transition: opacity 0.6s, -webkit-transform 0.6s;
+  transition: transform 0.6s, opacity 0.6s;
+  transition: transform 0.6s, opacity 0.6s, -webkit-transform 0.6s;
+}
+.ripple:active:after {
+  -webkit-transform: scale(0, 0);
+      -ms-transform: scale(0, 0);
+          transform: scale(0, 0);
+  opacity: 0.3;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+.xTag {
+  margin-bottom: 8px;
+  margin-right: 8px;
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #d9d9d9;
+  padding: 0 7px;
+  font-size: 12px;
+  line-height: 20px;
+  white-space: nowrap;
+  background-color: #fafafa;
+}
+.xTag.xTagHasColor {
+  border-color: transparent;
+  color: #fff;
+}
+.xTag.xTagHasColor .closeBtn {
+  color: rgba(255, 255, 255, 0.6);
+}
+.xTag .closeBtn {
+  margin-left: 5px;
+  color: rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+}
+
+.xAlertWrap {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  padding: 5px 12px;
+  margin-bottom: 16px;
+  border-radius: 3px;
+}
+.xAlertWrap.success {
+  background-color: #f6ffed;
+  border: 1px solid #b7eb8f;
+}
+.xAlertWrap.info {
+  background-color: #e6f7ff;
+  border: 1px solid #91d5ff;
+}
+.xAlertWrap.error {
+  background-color: #fffbe6;
+  border: 1px solid #ffe58f;
+}
+.xAlertWrap.warning {
+  background-color: #fff1f0;
+  border: 1px solid #ffa39e;
+}
