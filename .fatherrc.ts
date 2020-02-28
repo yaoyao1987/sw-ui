@@ -1,8 +1,9 @@
 import { IBundleOptions } from 'father';
 
 const options: IBundleOptions = {
-  cjs: 'rollup',
-  esm: 'rollup',
+  entry: 'src/index.tsx',
+  cjs: 'babel',
+  esm: 'babel',
   doc: { typescript: true },
   extractCSS: true,
   lessInBabelMode: true,

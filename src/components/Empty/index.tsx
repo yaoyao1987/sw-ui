@@ -1,6 +1,6 @@
 import React from 'react';
-import classNames from 'classnames'
-import styles from './index.less';
+import classNames from 'classnames';
+import './index.less';
 
 interface EmptyProps {
 	text?: string;

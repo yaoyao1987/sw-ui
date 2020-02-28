@@ -1,0 +1,12 @@
+.emptyWrap {
+  margin: 0 8px;
+  line-height: 22px;
+  text-align: center;
+}
+.emptyInner {
+  height: 100px;
+  margin-bottom: 8px;
+}
+.emptyInner span {
+  height: 100%;
+}
