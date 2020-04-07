@@ -21,14 +21,20 @@
     "dev": "npx --max_old_space_size=8096 father doc dev --host 0.0.0.0",
     "build": "father build",
     "build:doc": "father doc build",
-    "deploy": "father doc deploy"
+    "deploy": "father doc deploy",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
   },
   "peerDependencies": {
     "react": "16.x"
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "@types/classnames": "^2.2.9",
     "@types/vfile-message": "^2.0.0",
+    "conventional-changelog": "^3.1.18",
+    "cz-conventional-changelog": "^3.1.0",
+    "cz-customizable": "^6.2.0",
     "father": "^2.16.0",
     "typescript": "^3.3.3"
   },
@@ -42,5 +48,15 @@
   "dependencies": {
     "@babel/runtime": "^7.8.4",
     "classnames": "^2.2.6"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
